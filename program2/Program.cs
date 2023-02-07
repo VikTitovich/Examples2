@@ -1,5 +1,6 @@
 ﻿//Task_1();
-Task_2();
+//Task_2();
+Task_3();
 
 // void Task_1()
 // {
@@ -15,6 +16,20 @@ void Task_2()
     int[] array = new int[] {ReadInt("First Number"), ReadInt("Second Number"), ReadInt ("Third Number") };
 
     PrintMoreFromArray(array);  
+}
+
+void Task_3()
+{
+    int digital = GetThridDigital(ReadInt("number"));
+    
+    if (digital > 0)
+    {
+    Console.WriteLine(digital);
+    }
+    else
+    {
+    Console.WriteLine("None");    
+    }
 }
 
 int ReadInt (string argument)
@@ -72,3 +87,16 @@ void PrintMoreFromArray (int[] array)
 } 
 
 
+int GetThridDigital(int number)
+{
+    if (number < 100)
+    {
+        return -1;
+    }
+    while (number / 10 >= 100)
+    {
+        number /=10;
+    }
+    return number % 10;
+
+}
