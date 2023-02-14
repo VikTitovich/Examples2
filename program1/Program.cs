@@ -23,14 +23,19 @@ int ReadInt (string argument)
 return number;
 }
 
+// void PrintMore (int firstNumber, int secondNumber)
+// {
+//     if (firstNumber > secondNumber)
+//     {
+//         Console.WriteLine($"{firstNumber} > {secondNumber}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"{secondNumber} > {firstNumber}");
+//     }
+// }
+
 void PrintMore (int firstNumber, int secondNumber)
 {
-    if (firstNumber > secondNumber)
-    {
-        Console.WriteLine($"{firstNumber} > {secondNumber}");
-    }
-    else
-    {
-        Console.WriteLine($"{secondNumber} > {firstNumber}");
-    }
+    Console.WriteLine(firstNumber > secondNumber ? firstNumber : secondNumber);
 }
