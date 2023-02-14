@@ -3,13 +3,12 @@
 void Task_1()
 {
     int firstNumber = ReadInt ("First Number");
+
     int secondNumber = ReadInt ("Second Number");
 
     PrintMore (firstNumber, secondNumber);
 
 }
-
-
 
 int ReadInt (string argument)
 {
@@ -39,3 +38,4 @@ void PrintMore (int firstNumber, int secondNumber)
 {
     Console.WriteLine(firstNumber > secondNumber ? firstNumber : secondNumber);
 }
+
